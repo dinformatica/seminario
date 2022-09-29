@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" />
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+
+</head>
+
+
+
+<body>
+
+
+
+    <div class="container">
+        <div class="col s12 m8 offset-m1 xl7 offset-xl1 center-on-small-only">
+            <h1 class="header blue-text">Seminario SERVIU</h1>
+            <h4 class="light">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio, saepe esse! Cum,
+                consectetur, asperiores officia voluptatem aut in accusantium, modi nulla sapiente illum commodi aperiam
+                alias quia nam temporibus quidem?</h4>
+        </div>
+        <br>
+        <div class="col s12 m8 offset-m1 xl7 offset-xl1 center-on-small-only">
+            <h3 class="header blue-text">Descargas</h3>
+            <p class="caption">Materialize comes in two different forms. You can select which version you want
+                depending on your preference and expertise. To start using Materialize, all you have to do is download
+                one of the options below.</p>
+        </div>
+        <br>
+
+        <ul class="collapsible">
+            <li>
+                <div class="collapsible-header">
+                    <i class="material-icons">web</i>
+                    Presentación
+                    <span class="badge blue-text"><a
+                            class="btn right waves-effect waves-light hide-on-small-only blue valign-wrapper"
+                            href="/docs/pdf-prueba.pdf"><i
+                                class="material-icons left">archive</i>Descargar</a></span>
+
+                </div>
+                <div class="collapsible-body">
+                    <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+            </li>
+            <li>
+                <div class="collapsible-header">
+                    <i class="material-icons">picture_as_pdf</i>
+                    Documentación
+                    <span class="badge"><a
+                            class="btn right waves-effect waves-light hide-on-small-only blue valign-wrapper "
+                            href="/docs/lorem-ipsum.pdf"><i
+                                class="material-icons left">archive</i>Descargar</a></span>
+                </div>
+
+                <div class="collapsible-body">
+                    <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+            </li>
+
+
+
+        </ul>
+
+        <br>
+        <br>
+
+        <div class="row center">
+
+            <a id="logo-container" href="/" class="brand-logo">
+                <object id="front-page-logo" type="image/svg+xml" data="/docs/LogoV1.png" width="150"
+                    height="150"></object></a>
+            <a id="logo-container" href="/" class="brand-logo">
+                <object id="front-page-logo" type="image/svg+xml" data="/docs/LogoV2.png" width="150"
+                    height="150"></object></a>
+        </div>
+        <br>
+        <br>
+
+
+    </div>
+
+
+
+
+
+    <!--JavaScript at end of body for optimized loading-->
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var elems = document.querySelectorAll('.collapsible');
+            var instances = M.Collapsible.init(elems, options);
+        });
+
+        // Or with jQuery
+
+        $(document).ready(function () {
+            $('.collapsible').collapsible();
+        });
+    </script>
+
+</body>
+
+<footer class="page-footer blue">
+    <div class="container">
+        <div class="row">
+            <div class="col l6 s12">
+                <h5 class="white-text">Contenido pie de pagina</h5>
+                <p class="grey-text text-lighten-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro
+                    aperiam dolorem sunt nam impedit modi maxime, et in eaque earum veritatis asperiores inventore
+                    fugiat saepe mollitia dolore est at qui!
+                </p>
+            </div>
+            <div class="col l4 offset-l2 s12">
+                <h5 class="white-text">Enlaces</h5>
+                <ul>
+                    <li><a class="grey-text text-lighten-3" href="#!">Enlace</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="footer-copyright">
+        <div class="container">
+            © 2022 Equipo Desarrollo - SERVIU VIII
+            <a class="grey-text text-lighten-4 right">Informática</a>
+        </div>
+    </div>
+</footer>
+
+</html>
